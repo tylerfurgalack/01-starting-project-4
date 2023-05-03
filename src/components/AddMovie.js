@@ -13,9 +13,9 @@ function AddMovie(props) {
     // could add validation here...
 
     const movie = {
-      title: titleRef.current.value,
-      openingText: openingTextRef.current.value,
-      releaseDate: releaseDateRef.current.value,
+      title: titleRef.current.valueOf,
+      openingText: openingTextRef.current.valueOf,
+      releaseDate: releaseDateRef.current.valueOf,
     };
 
     props.onAddMovie(movie);
